@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Navigator-container{
+    width: 100vw;
+    height: 100px;
+    background-color: grey;
+
+
+    /* CSS GRID FOR NAVIGATORS */
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 20px;
+}
+
+
+.Logo-container{
+    
+
+    /* CSS GRID */
+    grid-column: 1/2;
+}
+
+
+.Bars-container{
+    display: none;
+
+    /* CSS GRID */
+    grid-column: 2/3;
+}
+
+
+
+.Navigators{
+    list-style: none;
+    
+
+    /* CSS GRID */
+    display: grid;
+    grid-column: 3/4;
+    grid-auto-flow: column;
+    place-items: center;
+}
+
+
+
+
+/* RESPONSIVE CSS GRID */
+
+/* LARGE DEVICE */
+@media (min-width:768px){
+
+    body{
+        color: red;
+    }
+
+}
+
+
+/* MEDIUM DEVICE */
+@media (min-width:568px) and (max-width:768px){
+
+     
+    body{
+        color: yellow;
+    }
+
+    .Navigator-container{
+
+
+        /* CSS GRID */
+        
+    }
+
+    .Bars-container{
+        display: block;
+        position: fixed;
+        top: 30px;
+    }
+
+    .Navigators{
+
+
+        /* CSS GRID */
+        grid-auto-flow: row;
+    }
+
+}
+
+
+@media (max-width:578px){
+
+    body{
+        color: pink;
+    }
+
+}
