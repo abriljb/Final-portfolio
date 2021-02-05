@@ -56,7 +56,7 @@
     
 }
 
-.Navigators li{
+.Navigators li a{
     padding: 5px;
     color: black;
     transition:0.2s ;
@@ -68,7 +68,7 @@
 
 /* HOVER EFFECT FOR NAVIGATORS */
 
-.Navigators li:hover{
+.Navigators li a:hover{
     border-bottom: 10px solid black;
     
 
@@ -127,9 +127,7 @@
 @media (min-width:568px) and (max-width:768px){
 
      
-    body{
-        color: yellow;
-    }
+    
 
 
     .Navigator-container{
@@ -168,11 +166,13 @@
         width: 100vw;
         height: 100%;
         background-color: pink;
+        font-weight: bolder;
 
         /* CSS GRID */
         grid-auto-flow: row;
         grid-row: 2/3;
         grid-column: 1/3;
+        row-gap: 10px;
    
         
     }
@@ -181,13 +181,19 @@
         width: 100vw;
         height: 0%;
         background-color: red;
+        font-weight: bolder;
 
         /* CSS GRID */
         grid-auto-flow: row;
         grid-row: 2/3;
         grid-column: 1/3;
+        row-gap: 10px;
    
         
+    }
+
+    .Navigators li{
+        top: 20px;
     }
 
 
@@ -259,5 +265,7 @@
    
         
     }
+
+    
 
 }
