@@ -22,7 +22,7 @@
 
 
 .Logo-container{
-    padding: 25px;
+    padding: 20px;
     
 
     /* CSS GRID */
@@ -69,7 +69,6 @@
 /* HOVER EFFECT FOR NAVIGATORS */
 
 .Navigators li:hover{
-    text-shadow: 0px 0px 10px 0px black;
     border-bottom: 10px solid black;
     
 
@@ -157,7 +156,7 @@
         position: fixed;
         font-size: 40px;
         top: 10px;
-        left: 93%;
+        left: 90%;
 
 
         /* CSS GRID */
@@ -168,13 +167,12 @@
     .Navigators{
         width: 100vw;
         background-color: red;
-        margin-top: 30px;
 
         /* CSS GRID */
         grid-auto-flow: row;
         grid-row: 2/3;
         grid-column: 1/3;
-        row-gap: 10px;
+   
         
     }
 
@@ -184,8 +182,9 @@
 @media (max-width:578px){
 
     body{
-        color: pink;
+        color: yellow;
     }
+
 
     .Navigator-container{
 
@@ -197,7 +196,14 @@
     }
 
 
-    
+    .Logo-container{
+
+
+        /* CSS GRID */
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 
     .Bars-container{
         display: block;
@@ -214,14 +220,13 @@
 
     .Navigators{
         width: 100vw;
-        background-color: green;
-        margin-top: 30px;
+        background-color: pink;
 
         /* CSS GRID */
         grid-auto-flow: row;
         grid-row: 2/3;
         grid-column: 1/3;
-        row-gap: 10px;
+   
         
     }
 
