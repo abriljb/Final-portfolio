@@ -4,16 +4,16 @@ const bgnavigators = document.querySelector('.Navigators')
 
 
 barcontainer.addEventListener(`click`, ()=>{
-    if(Icon.classList.contains('fa-bars')){
-        Icon.classList.remove('fa-bars')
-        Icon.classList.add('fa-close')
+    if(Icon.classList.contains('fa-close')){
+        Icon.classList.remove('fa-close')
+        Icon.classList.add('fa-bars')
         bgnavigators.classList.remove('show')
         bgnavigators.classList.add('hide')
         
         
     }else{
-        Icon.classList.remove('fa-close')
-        Icon.classList.add('fa-bars')
+        Icon.classList.remove('fa-bars')
+        Icon.classList.add('fa-close')
         bgnavigators.classList.remove('hide')
         bgnavigators.classList.add('show')
     }
