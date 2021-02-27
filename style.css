@@ -4,15 +4,17 @@
     font-family: sans-serif;
     scroll-behavior: smooth;
     
+    
 }
 
 .Navigator-container{
     width: 100vw;
-    height: 80px;
+    height: 65px;
     font-weight: bolder;
     position: fixed;
-    background-color: rgba(1, 100, 100, 1);
-    box-shadow: 0px 0px 5px 0px black;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+    
     
 
 
@@ -41,7 +43,8 @@
 
 
 .Navigators{
-
+   
+    font-size: 12px;
     list-style: none;
     
 
@@ -59,7 +62,7 @@
 
 .Navigators li{
     padding: 5px;
-    color: black;
+    color: white;
     transition:0.2s ;
     transform-origin: 0.3s;
     transition-timing-function: cubic-bezier(9, 0, 0, 9);
@@ -79,35 +82,97 @@
 
 
 .Home{
-    width: 100vw;
-    height: 100vh;
-    background-color: blue;
 
+    width: auto;
+    height: 100vh;
+    
+
+
+ /* CSS GRID */
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+grid-template-rows:1fr;
+
+}
+
+
+#Home .messageko{
+    width: 100%;
+    height: 73.7%;
+    padding: 10%;
+    
+    color: white;
+    word-spacing:0.1em;
+    white-space: 0.2cm;
+    margin-top: 65px;
+    background-image: url(img/3.jpg);
+    background-repeat: none;
+    background-size: cover;
+    font-size: 100%;
+
+    /* CSS GRID */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    place-items: center;
+    
+    
+    
+    
+
+
+}
+
+#Hi{
+    font-size: 160%;
+    
+}
+
+#Home .imageko{
+    width: 100%;
+    height: 91.7%;
+    margin-top: 65px;
+    background-image: url(img/1.jpg);
+    background-position:center;
+    background-size: cover;
+    /* CSS GRID */
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+
+    
+
+    
 }
 
 .Projects{
-    width: 100vw;
+    width: auto;
     height: 100vh;
-    background-color: red;
+    background-color: yellow;
 
 }
 
-.Skills{
+.Projects img {
     width: 100vw;
+    height: 100vh;
+}
+
+.Skills{
+    width: auto;
     height: 100vh;
     background-color: green;
 
 }
 
 .Resume{
-    width: 100vw;
+    width: auto;
     height: 100vh;
     background-color: yellow;
 
 }
 
 .Contacts{
-    width: 100vw;
+    width: auto;
     height: 100vh;
     background-color: pink;
 
@@ -169,8 +234,8 @@
     .Navigators.show{
         width: 100vw;
         height: 150px;
-        transition: height 0.2s ease;
-        background-color: pink;
+        transition: height 0.1ms ease;
+        background-color: black;
 
         /* CSS GRID */
         grid-auto-flow: row;
@@ -184,7 +249,7 @@
         width: 100vw;
         height: 0px;
         font-size: 0px;
-        background-color: red;
+        background-color: black;
         transition: height 0.2s ease;
 
         /* CSS GRID */
