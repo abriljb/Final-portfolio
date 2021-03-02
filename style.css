@@ -98,8 +98,9 @@ grid-template-rows:1fr;
 
 #Home .messageko{
     width: 100%;
-    height: 73.7%;
-    padding: 10%;
+    height: 93.7%;
+    text-indent: 20px;
+    
     
     color: white;
     word-spacing:0.1em;
@@ -108,7 +109,7 @@ grid-template-rows:1fr;
     background-image: url(img/3.jpg);
     background-repeat: none;
     background-size: cover;
-    font-size: 100%;
+    font-size: 90%;
 
     /* CSS GRID */
     grid-column: 1/2;
@@ -130,7 +131,7 @@ grid-template-rows:1fr;
 
 #Home .imageko{
     width: 100%;
-    height: 91.7%;
+    height: 93.7%;
     margin-top: 65px;
     background-image: url(img/1.jpg);
     background-position:center;
@@ -148,14 +149,11 @@ grid-template-rows:1fr;
 .Projects{
     width: auto;
     height: 100vh;
-    background-color: yellow;
+    background-color: grey;
 
 }
 
-.Projects img {
-    width: 100vw;
-    height: 100vh;
-}
+
 
 .Skills{
     width: auto;
@@ -260,6 +258,73 @@ grid-template-rows:1fr;
         
     }
 
+
+    .Home{
+
+        width: 100%;
+        height: 100vh;
+        
+    
+    
+     /* CSS GRID */
+     display: grid;
+     grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr;
+    
+    }
+    
+    
+    #Home .messageko{
+        width: 100%;
+        height: 100%;
+        text-indent: 20px;
+        
+        
+        color: white;
+        word-spacing:0.1em;
+        white-space: 0.2cm;
+        margin-top: 65px;
+        background-image: url(img/3.jpg);
+        background-repeat: none;
+        background-size: cover;
+        font-size: 90%;
+    
+        /* CSS GRID */
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        place-items: center;
+        
+        
+        
+        
+    
+    
+    }
+    
+    #Hi{
+        font-size: 160%;
+        
+    }
+    
+    #Home .imageko{
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        background-image: url(img/1.jpg);
+        background-position:top;
+        background-size: contain;
+        /* CSS GRID */
+        grid-column: 1/2;
+        grid-row: 2/3;
+        
+    
+        
+    
+        
+    }
+  
+  
     
 
 
